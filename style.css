@@ -14,6 +14,7 @@
     color: var(--branco);
     font-family: var(--roboto-mono);
     font-size: 40px;
+    width: 70%;
 }
 #campo-senha:focus {
     outline: none;
@@ -25,4 +26,28 @@
 .titulo-secundario{
     font-size: 24px;
     font-weight: 400;
+}
+.parametro{
+    background-color: var(--fundo-texto);
+    border: 2px solid var(--borda);
+    margin-top: 32px;
+    padding: 24px;
+}
+.parametro-titulo{
+    font-family: var(--roboto-mono);
+    font-size: 28px;
+}
+.parametro-senha{
+    width: 50%;
+    margin: 0 auto;
+}
+.parametro-coluna__senha{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+@media screen and (min-width: 768px) {
+    .parametro-coluna__senha{
+        flex-direction: row;
+    }
 }
