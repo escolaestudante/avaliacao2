@@ -1,3 +1,27 @@
+@import url();
+
+:root{
+    --branco: white;
+    --cor-de-fundo:#00162E;
+    --fundo-senha:#00244D;
+    --fundo-texto:#001E40;
+    --borda:#0075FF;
+    --roboto: roboto, sans-serif;
+    --roboto-mono: roboto mono, monospace;
+}
+body{
+    color: var(--branco);
+    background-color: var(--cor-de-fundo);
+    font-family: var(--roboto);
+
+}
+.titulo-principal{
+    font-family: var(--roboto-mono);
+    font-size: 32px;
+}
+titulo-secundario{
+    font-size: 24px;dg
+}
 .conteudo-titulo{ 
     text-align: center;
     margin-top: 80px;
@@ -22,29 +46,6 @@
 .conteudo{
     max-width: 1200px;
     margin: 0 auto;
-}
-.titulo-secundario{
-    font-size: 24px;
-    font-weight: 400;
-}
-.parametro{
-    background-color: var(--fundo-texto);
-    border: 2px solid var(--borda);
-    margin-top: 32px;
-    padding: 24px;
-}
-.parametro-titulo{
-    font-family: var(--roboto-mono);
-    font-size: 28px;
-}
-.parametro-senha{
-    width: 50%;
-    margin: 0 auto;
-}
-.parametro-coluna__senha{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
 }
 @media screen and (min-width: 768px) {
     .parametro-coluna__senha{
